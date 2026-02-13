@@ -1,0 +1,128 @@
+.container {
+  position:relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+   margin-top:49px;
+  z-index:1;
+      margin-left:10%;
+      margin-right:10%;
+}
+
+.arrange{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:20px;
+    font-family: var(--font-roboto);
+    
+}
+
+.arrange .h1{
+    color:var(--color-text)
+}
+
+.card {
+  width: 260px;
+  height: 320px;
+  padding: 16px;
+  perspective:1000px;
+  border-radius: 12px;
+  /* border: 1px solid #e5e7eb; */
+  
+  border:1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:var(--color-text);
+  /* background-color: #ffffff; */
+  background-color:#0B2447;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  opacity:0;
+  /* transform:translateY(40px) scale(0.95); */
+  translate:transform 0.6s ease,opacity 0.6s ease,box-shadow 0.3s ease;
+  /* translate:opacity 0.8s ease-out; */
+  background: rgba(16, 30, 228, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.35);
+}
+
+
+.show{
+    transform:translateY(0) scale(1);
+    opacity:1;
+}
+
+
+
+
+.cardInner{
+    width:100%;
+    height:100%;
+    position:relative;
+    transform-style:preserve-3d;
+    transition:transform 0.6s ease;
+}
+
+
+.card:active .cardBack,.cardFront {
+  box-shadow:
+    inset 0 0 30px rgba(56, 189, 248, 0.35);
+}
+
+.flip{
+    transform:rotateY(180deg);
+}
+
+.cardFront, .cardBack{
+    position:absolute;
+    width:100%;
+    height:100%;
+    backface-visibility: hidden;
+    padding:1.5rem;
+    background: #0B2447;
+    border: 1px solid #1E3A5F;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+    
+}
+
+.cardImage{
+    width:80px;
+    height:80px;
+    object-fit:contain;
+    margin-bottom:1rem;
+}
+
+.cardBack{
+    transform:rotateY(180deg);
+    transition: box-shadow 0.2s ease;
+
+}
+
+.cardFront{
+    transition:box-shadow 0.2s ease;
+}
+
+.cardSequence{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    border-radius:6px;
+}
+
+.cardBack ul{
+   list-style-type: none;
+}
+.cardBack li{
+    margin:6px 0;
+}
+
+.card:hover .cardFront,
+.card:hover .cardBack {
+  border-color: #38BDF8;
+}
