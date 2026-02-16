@@ -5,7 +5,7 @@ import Typewriter from 'typewriter-effect'
 
 const Hero = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="about">
         <div className={styles.content}>
             <h1 className={styles.title}>
               <Typewriter onInit={(typewriter)=>{
@@ -18,15 +18,11 @@ const Hero = () => {
                 typewriter.typeString("I am a Full-Stack Developer").pauseFor(2500).start();}}
             options={{autoStart:true,delay:50}}  /> </p>                                     */}
             {/* <a href="mailto:alalanithya01@gmail.com" className={styles.contactBtn}>Contact Me</a> */}
-            <a
-  href="https://mail.google.com/mail/?view=cm&fs=1&to=alalanithya01@gmail.com"
-  target="_blank"
-  rel="noopener noreferrer"
-  className={styles.contactBtn}
->
-  Contact Me
-</a>
-
+            <div class={styles.contact}>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alalanithya01@gmail.com"   target="_blank"  rel="noopener noreferrer"  className={styles.contactBtn}>  Contact Me </a> 
+            <a href="https://drive.google.com/file/d/1wiaIe5mecDfO_6iI-QGsJHwgzXZrJ2Ya/view" target="_blank"  rel="noopener noreferrer" 
+                className={styles.resumeBtn}>  View Resume </a> 
+           </div>
         </div>
         <img src="heroImage.png" alt="Hero section" className={styles.heroImg} />
     </section>

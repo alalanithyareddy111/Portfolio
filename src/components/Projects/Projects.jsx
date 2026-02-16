@@ -9,7 +9,7 @@ const Projects = () => {
     title:"ZoomPlus",
     image:"./zoom1.png",
     tech:"Next.js . Stream.io . MongoDB",
-    desc:"A video conferencing app",
+    desc:"A video conferencing app with extended features like live subtitles, chatBot, Automated mail notification scheduler, attendence management.",
     git:"https://github.com/alalanithyareddy111/zoom-clone",
     live:"/"
   },
@@ -18,9 +18,17 @@ const Projects = () => {
     title:"Waste Segregation",
     image:"./Waste.png",
     tech:"React",
-    desc:"Interactive waste sorting game",
+    desc:"Designed and developed an interactive web app to educate users on proper waste disposal through a drag-and-drop game, improved performance by caching image assets, cutting redundant network fetches.",
     git:"https://github.com/alalanithyareddy111/WasteSegregationGame",
     live:"https://ecochamp-iota.vercel.app/"
+  },{
+    id:3,
+    title:"Real-Time Chat Application",
+    image:"./chat.png",
+    tech:"React . Node.js . MongoDb . Zustand",
+    desc:"Built a real time chat application using MERN stack, socket.io, TailwindCSS. Implemented user authentication and authorization with JWT for secure access control. Instant messaging using socket.io.",
+    git:"https://github.com/alalanithyareddy111/ChatApp1",
+    live:"/"
   }
 ]
   useEffect(()=>{
@@ -41,6 +49,7 @@ const Projects = () => {
     return ()=>observer.disconnect();
   },[]);
   return (
+    <section id="projects">
     <div className={styles.container}>
 
       <div className={styles.title}>
@@ -84,6 +93,7 @@ const Projects = () => {
       
      
     </div>
+    </section>
   )
 }
 

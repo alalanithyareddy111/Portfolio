@@ -18,10 +18,10 @@ const Navbar = () => {
 />
 
         <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`} onClick={()=>setMenuOpen(false)} >
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" class={styles.navLink}>About</a></li>
+            <li><a href="#skills" class={styles.navLink}>Skills</a></li>
+            <li><a href="#projects" class={styles.navLink}>Projects</a></li>
+            <li><a href="#profile" class={styles.navLink}>Profiles</a></li>
         </ul>
         </div>
     </nav>

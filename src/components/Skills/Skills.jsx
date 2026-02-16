@@ -52,11 +52,15 @@ const Skills = () => {
   },[])
 
   return (
-      <section className={styles.container} ref={sectionRef}>
+      <section className={styles.container} id="skills" ref={sectionRef}>
         
         <div className={styles.content}>
              <div className={styles.arrange}>
-                <h1 className={styles.h1}>Skills</h1>
+                {/* <h1 className={styles.h1}>Skills</h1>          */}
+                <div className={styles.title}>
+                  <img src="./tools.png" alt="skills" className={styles.titleImg}></img>
+                    <h1>Skills</h1>
+                    </div>
              {/* <div className={styles.cardSequence}>
              <div className={styles.card} onClick={() => setFlipped(f => !f)} >
               <div className={`${styles.cardInner} ${flipped ? styles.flip : ""}`}>

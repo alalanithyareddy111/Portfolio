@@ -2,7 +2,7 @@
     position:relative;
     margin-left:10%;
     margin-top:50px;
-        margin-right: 10%;
+    margin-right: 10%;
 
     padding-left: 1rem;
     padding-right: 1rem;
@@ -15,6 +15,7 @@
     color:var(--color-text);
     display:flex;
     align-items:center;
+    gap:1rem;
     
 }
 /* 
@@ -43,6 +44,7 @@
 .titleImg{
     width:50px;
     height:50px;
+    
     border:1px solid white;
     border-radius:50%;
     transition: transform 0.3s ease, background 0.3s ease;
