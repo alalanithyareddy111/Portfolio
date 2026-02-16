@@ -10,8 +10,9 @@
 .title{
     display:flex;
     align-items:center;
-      color:var(--color-text);
+    color:var(--color-text);
     gap:1rem;
+    margin-bottom:10px;
 }
 
 .titleImg{
