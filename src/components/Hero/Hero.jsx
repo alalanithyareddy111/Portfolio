@@ -20,7 +20,9 @@ const Hero = () => {
             {/* <a href="mailto:alalanithya01@gmail.com" className={styles.contactBtn}>Contact Me</a> */}
             <div class={styles.contact}>
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alalanithya01@gmail.com"   target="_blank"  rel="noopener noreferrer"  className={styles.contactBtn}>  Contact Me </a> 
-            <a href="https://drive.google.com/file/d/1wiaIe5mecDfO_6iI-QGsJHwgzXZrJ2Ya/view" target="_blank"  rel="noopener noreferrer" 
+            {/* <a href="https://drive.google.com/file/d/1wiaIe5mecDfO_6iI-QGsJHwgzXZrJ2Ya/view" target="_blank"  rel="noopener noreferrer" 
+                className={styles.resumeBtn}>  View Resume </a>  */}
+                <a href="https://drive.google.com/file/d/1mifHyxaamuqC8aShb8-WsjJeZ_tOrZ9F/view" target="_blank"  rel="noopener noreferrer" 
                 className={styles.resumeBtn}>  View Resume </a> 
            </div>
         </div>
